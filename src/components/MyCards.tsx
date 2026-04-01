@@ -96,10 +96,7 @@ export default function MyCards({ cards, drawnNumbers, onToggleMark }: MyCardsPr
           ))}
         </div>
 
-        <div className="mt-12 glass-panel p-4 rounded-2xl flex flex-wrap gap-6 items-center justify-between border border-white/5 print-hidden">
-          <button className="px-8 py-3 bg-gradient-to-r from-nebula-secondary to-fuchsia-700 text-white font-black uppercase tracking-widest rounded-xl hover:shadow-[0_0_30px_rgba(237,98,255,0.5)] transition-all">
-            Call Bingo!
-          </button>
+        <div className="mt-12 glass-panel p-4 rounded-2xl flex flex-wrap gap-6 items-center justify-end border border-white/5 print-hidden">
           <div className="flex gap-2">
             <button className="w-12 h-12 flex items-center justify-center rounded-xl bg-nebula-surface-highest hover:bg-white/10 transition-colors border border-white/10 text-slate-400">
               <Sparkles size={20} />
@@ -161,10 +158,6 @@ export default function MyCards({ cards, drawnNumbers, onToggleMark }: MyCardsPr
               </div>
               <div className="w-full h-1 bg-nebula-surface rounded-full overflow-hidden">
                 <div className="h-full bg-nebula-primary" style={{ width: `${(drawnNumbers.length / 75) * 100}%` }}></div>
-              </div>
-              <div className="flex justify-between items-center text-xs pt-1">
-                <span className="text-slate-400">Players Online</span>
-                <span className="text-nebula-secondary font-bold">1,248</span>
               </div>
             </div>
           </div>

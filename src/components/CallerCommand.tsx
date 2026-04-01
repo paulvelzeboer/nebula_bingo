@@ -90,13 +90,6 @@ export default function CallerCommand({ drawnNumbers, onDraw }: CallerCommandPro
                 </p>
               </div>
             </div>
-            <div className="glass-panel p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
-              <Users className="text-nebula-primary mb-4" size={24} />
-              <div>
-                <p className="text-xs uppercase tracking-widest text-slate-400 mb-1">Active Players</p>
-                <p className="text-2xl font-headline font-bold text-white">1,204</p>
-              </div>
-            </div>
           </div>
         </div>
 

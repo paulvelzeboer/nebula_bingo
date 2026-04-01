@@ -40,9 +40,6 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
         </div>
         <div className="flex items-center gap-4">
           <button className="p-2 rounded-full hover:bg-white/10 transition-all text-slate-400">
-            <Settings size={20} />
-          </button>
-          <button className="p-2 rounded-full hover:bg-white/10 transition-all text-slate-400">
             <User size={20} />
           </button>
         </div>
@@ -60,7 +57,7 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
               />
             </div>
             <div>
-              <p className="text-cyan-400 font-black text-xl leading-none font-headline">Commander</p>
+              <p className="text-cyan-400 font-black text-xl leading-none font-headline">Bingo Master</p>
               <p className="uppercase tracking-widest text-[10px] text-slate-400 mt-1">Nebula Sector 7G</p>
             </div>
           </div>
@@ -85,19 +82,7 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
             active={currentView === 'cards'} 
             onClick={() => onViewChange('cards')}
           />
-          <SidebarItem 
-            icon={<SlidersHorizontal size={18} />} 
-            label="Settings" 
-            active={false} 
-            onClick={() => {}}
-          />
         </nav>
-
-        <div className="p-6">
-          <button className="w-full py-3 px-4 bg-gradient-to-r from-nebula-secondary to-fuchsia-700 rounded-xl text-white font-bold text-sm tracking-wide shadow-lg shadow-nebula-secondary/20 active:scale-95 transition-transform">
-            Buy New Cards
-          </button>
-        </div>
 
         <div className="mt-auto border-t border-white/5 p-4">
           <button className="flex items-center gap-3 text-slate-400 px-4 py-2 hover:text-white transition-colors w-full">
@@ -143,12 +128,6 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
           label="Draw" 
           active={currentView === 'caller'} 
           onClick={() => onViewChange('caller')}
-        />
-        <MobileNavItem 
-          icon={<Settings size={20} />} 
-          label="Menu" 
-          active={false} 
-          onClick={() => {}}
         />
       </nav>
 
